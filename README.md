@@ -74,15 +74,6 @@ sudo ./scripts/capture_flows.sh
 See [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md) for the **6** routing,
 NAT, and firewall failures resolved by comparing WAN (outer UDP) vs TUN (inner
 IP) captures.
-
-## Resume bullets (backed by this repo)
-
-- Routed **10K+** IP packets between 2 Linux hosts at **20+ Mbps** via user-space
-  TUN + UDP forwarding (`tools/bench.py`, `scripts/bench_netns.sh`).
-- Resolved **6/6** routing, NAT, and firewall failures by tracing packet flows
-  with Wireshark/tcpdump across **15+** network tests
-  (`docs/TROUBLESHOOTING.md`, `scripts/run_network_tests.sh`).
-
 ## Requirements
 
 - Linux with `/dev/net/tun` and `CAP_NET_ADMIN` (for real TUN)
