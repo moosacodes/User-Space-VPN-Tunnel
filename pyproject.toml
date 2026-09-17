@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "userspace-vpn-tunnel"
+version = "1.0.0"
+description = "User-space VPN tunnel using Linux TUN/TAP and UDP forwarding"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "VPN Tunnel Project" }]
+
+[project.scripts]
+vpn-server = "vpn.server:main"
+vpn-client = "vpn.client:main"
+
+[tool.setuptools.packages.find]
+include = ["vpn*"]
