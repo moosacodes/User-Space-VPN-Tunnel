@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+
+# Captures / reports
+captures/
+*.pcap
+*.pcapng
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

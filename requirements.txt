@@ -1,0 +1,2 @@
+# Stdlib only — no third-party runtime deps.
+# Optional host tools: iproute2, tcpdump, iptables/nftables, wireshark
