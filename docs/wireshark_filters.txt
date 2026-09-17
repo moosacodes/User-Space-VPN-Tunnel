@@ -1,0 +1,16 @@
+# Wireshark display filters for this project (paste into filter bar)
+
+# Outer tunnel
+udp.port == 51820
+
+# Overlay addresses
+ip.addr == 10.8.0.0/24
+
+# ICMP over TUN
+icmp && ip.addr == 10.8.0.0/24
+
+# TCP handshake problems
+tcp.flags.syn == 1 && tcp.flags.ack == 0
+
+# Large frames (MTU issues)
+frame.len > 1400
